@@ -7,6 +7,7 @@ import android.os.Bundle;
 /**
  * Created by melqu on 12/07/2016.
  */
+//Define a SplashCreen
 public class SplashScreen extends Activity{
 
     @Override
@@ -14,9 +15,10 @@ public class SplashScreen extends Activity{
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.splashscreen);
-
+        //instancia a thread para
         Thread timerThread = new Thread(){
 
+            //instancia a classe run para execução da trhead
             public void run(){
 
                 try{
@@ -35,7 +37,7 @@ public class SplashScreen extends Activity{
         };
        timerThread.start();
     }
-
+    //função para dar um pause na execução da thread
     protected void onPause(){
 
         super.onPause();
