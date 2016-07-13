@@ -5,7 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 
 /**
- * Created by melqu on 12/07/2016.
+ * Created by melque on 12/07/2016.
  */
 //Define a SplashCreen
 public class SplashScreen extends Activity{
@@ -22,7 +22,7 @@ public class SplashScreen extends Activity{
             public void run(){
 
                 try{
-
+                    // 3 segundos carregando
                     sleep(3000);
 
                 }catch (InterruptedException e){
